@@ -51,28 +51,50 @@
     font-style: italic;
 }
 
+html {
+    background-color: rgb(220, 220, 220);
+}
 
 * {
     font-family: "Ubuntu";
-    background-color: rgb(243, 243, 243);
 }
 
 /* aca empiezan las aplicaciones */
 
 header {
-    background-color: burlywood;
+    color: beige;
+    text-align: center;
+    margin: 0;
 }
 
-.hero {
-    background-color: aquamarine;
+#hero {
+    text-align: center;
+    color: rgb(50, 50, 50);
+    margin-bottom: 50px;
+}
+
+#hero h1 {
+    margin-bottom: 5px;
+}
+
+#datos-personales {
+    margin-bottom: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    color: beige;
 }
 
 .flex-container {
-    background-color: black;
+    display: flex;
+    background-color: rgb(50, 50, 50);
+    justify-content: space-around;
+    margin: 0;
 }
 
-.flex-item {
-    background-color: blueviolet;
+.info {
+    background-color: rgb(220,220,220);
+    padding: 10px;
+    margin: 50px;
 }
 
 h1 {
@@ -80,5 +102,6 @@ h1 {
 }
 
 footer {
-    background-color: burlywood;
+    background-color: rgb(50, 50, 50);
+    color: beige;
 }
