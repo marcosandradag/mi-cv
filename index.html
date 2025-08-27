@@ -12,49 +12,52 @@
 
 <body>
     <header>
-        <img src="img" alt="Foto CV" width="100" height="25" />
         <nav>
             <a href="#">Info</a>
             <a href="#">Contacto</a>
         </nav>
     </header>
     <main>
-        <!-- logo y slogan -->
-        <section>
+        <section id="hero">
             <h1>Marcos Andrada Galíndez</h1>
-            <h2>Estudiante de Diseño y Comunicación Visual</h2>
+            <h3>Estudiante de Diseño y Comunicación Visual</h3>
         </section>
-        <!-- explicacion -->
-        <article>
+
+        <section>
+            <img src="img/perfil.jpg" alt="Foto CV" height=200px />
             <h3>Datos personales</h3>
             <p>Edad: 30</p>
             <p>Domicilio: Mi Casa 2025, Banfield</p>
             <p>Teléfono: 11 1234-5678</p>
             <p>Mail: marcosag@gmail.ar</p>
-        </article>
-        <!-- funcionamiento -->
-        <article>
-            <h3>Experiencia laboral</h3>
-            <ul>
-                <li>Vendedor y encargado en comercio Facu Mascotas (2014 - actualidad)</li>
-                <li>Diseñador independiente (2020 - actualidad)</li>
-                <li>Bajista en proyectos musicales:</li>
+        </section>
+
+        <section id="informacion" class="flex-container">
+            <article id="experiencia-laboral" class="flex-item a">
+                <h3>Experiencia laboral</h3>
                 <ul>
-                    <li>Espías del Umbral (2007 - 2019)</li>
-                    <li>Audio (2011 - actualidad)</li>
-                    <li>Los Modulati (2020 - 2023)</li>
-                    <li>Rodrigo Lazarte y los Juglares (2015 - 2018)</li>
-                    <li>Baires Gris (2011 - 2012)</li>
+                    <li>Vendedor y encargado en comercio Facu Mascotas (2014 - actualidad)</li>
+                    <li>Diseñador independiente (2020 - actualidad)</li>
+                    <li>Bajista en proyectos musicales:</li>
+                    <ul>
+                        <li>Espías del Umbral (2007 - 2019)</li>
+                        <li>Audio (2011 - actualidad)</li>
+                        <li>Los Modulati (2020 - 2023)</li>
+                        <li>Rodrigo Lazarte y los Juglares (2015 - 2018)</li>
+                        <li>Baires Gris (2011 - 2012)</li>
+                    </ul>
                 </ul>
-            </ul>
-        </article>
-                <article>
-            <h3>Formación académica</h3>
-            <ul>
-                <li>Licenciatura en Diseño y Comunicación Visual - Universidad Nacional de Lanús (2021 - actualidad)</li>
-                <li>Instrumentista en Música Popular con orientación en Tango - Escuela de Música Popular de Avellaneda (2011 - 2018)</li>
-            </ul>
-        </article>
+            </article>
+            <article id="formacion-academica" class="flex-item b">
+                <h3>Formación académica</h3>
+                <ul>
+                    <li>Licenciatura en Diseño y Comunicación Visual - Universidad Nacional de Lanús (2021 - actualidad)
+                    </li>
+                    <li>Instrumentista en Música Popular con orientación en Tango - Escuela de Música Popular de Avellaneda
+                        (2011 - 2018)</li>
+                </ul>
+            </article>
+        </section>
     </main>
     <footer>
         <p>Currículum Vitae para Computación 3, DyCV, UNLa. 2025.</p>
