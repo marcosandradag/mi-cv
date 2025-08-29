@@ -61,27 +61,47 @@ html {
 
 /* aca empiezan las aplicaciones */
 
+body {
+    margin: 0;
+}
+
 header {
     color: beige;
     text-align: center;
+    margin: 0; 
+}
+
+header p {
+    padding: 20px;
     margin: 0;
 }
 
 #hero {
     text-align: center;
     color: rgb(50, 50, 50);
-    margin-bottom: 50px;
+    margin: 40px 20px;
+    /* margin-bottom: 50px; */
 }
 
 #hero h1 {
-    margin-bottom: 5px;
+    margin: 0;
+    font-size: 60px;
+}
+
+#hero h3 {
+    margin: 20px 0 0 0;
 }
 
 #datos-personales {
-    margin-bottom: 40px;
+    margin: 20px;
     border-radius: 40px;
     padding: 10px;
     color: beige;
+    max-width: 800px;
+}
+
+img {
+    border-radius: 10px;
 }
 
 .flex-container {
@@ -93,15 +113,16 @@ header {
 
 .info {
     background-color: rgb(220,220,220);
-    padding: 10px;
-    margin: 50px;
-}
-
-h1 {
-    font-size: 60px;
+    padding: 20px;
+    margin: 0;
 }
 
 footer {
     background-color: rgb(50, 50, 50);
     color: beige;
+    padding: 20px;
+}
+
+ul {
+    margin: 0;
 }
