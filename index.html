@@ -13,12 +13,18 @@
 
 <body>
     <header>
+    
+    <!-- En base a lo que hablamos en clase, acá podría haber una economización de recursos. Es decir, escribir la menor cantidad de código posible. En este caso, el <div> dentro de <header> se podría omitir ya que <header> funciona como contenedor por sí mismo y solo contiene dos elementos <p>. Generalmente, las etiquetas contenedoras como div, section, etc, se usan cuando, sea semánticamente o para una instancia posterior de flex, necesitamos separar dos o más etiquetas. Se le puede aplicar la clase al header directamente.-->
+        
         <div id="cabezal">
             <p>Currículum Vitae</p>
             <p>Septiembre 2025</p>
         </div>
     </header>
     <main>
+
+        <!-- La etiqueta hero no existe! El concepto sí está bien, pero "hero" vendría siendo más bien un término que se le da a una parte de la página. La etiqueta podría ser un section. -->
+        
         <hero id="hero">
             <h1>Marcos Andrada Galíndez</h1>
             <h2>Estudiante de Diseño y Comunicación Visual</h2>
@@ -26,7 +32,7 @@
 
         <section id="datos-personales">
             <img src="img/perfil.jpg" alt="Foto CV" width="200" height="200" />
-            <div class="flex-item b">
+            <div class="flex-item b"> <!-- Podría ser un article. En lo posible intenta usar la menor cantidad de divs posibles. -->
                 <h3>Datos personales</h3>
                 <ul>
                     <li>Edad: 30</li>
@@ -48,6 +54,7 @@
                     </li>
                     <li>Diseñador independiente (2020 - actualidad)</li>
                     <li>Bajista en proyectos musicales:</li>
+                    <!-- Para hacer una lista dentro de una lista, tiene que estar anidada dentro de un li. La idea está bien, solo falta un <li> que contenga todo este <ul> nuevo (que podría ser tranquilamente el de arriba).-->
                     <ul id="bandas">
                         <li>Espías del Umbral (2007 - 2019)</li>
                         <li>Audio (2011 - actualidad)</li>
