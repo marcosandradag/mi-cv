@@ -54,6 +54,7 @@
 html {
     background-color: rgb(220, 220, 220);
     font-family: "Ubuntu";
+    font-size: 16px;
 }
 
 * {
@@ -61,15 +62,6 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-
-/*
-ul, ol, li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-*/
 
 /* aca empiezan las aplicaciones */
 
@@ -81,32 +73,25 @@ main {
 
 header {
     display: flex;
-    justify-content: center;
-    background-color: rgb(50, 50, 50);
-    flex-direction: row;
     flex-wrap: wrap;
-    color: beige;   
-}
-
-#cabezal {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    width: 1200px;
-    justify-content: space-between;
+    background-color: rgb(50, 50, 50);
+    color: beige;
 }
 
-header p {
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
     padding: 20px;
-    margin: 0;
-    color: beige;
+    gap: 20px;
 }
 
 #hero {
     text-align: center;
-    color: rgb(50, 50, 50);
     margin: 40px 20px;
-    /* margin-bottom: 50px; */
+    color: rgb(50, 50, 50);
 }
 
 #hero h1 {
@@ -115,89 +100,75 @@ header p {
 
 #hero h2 {
     margin: 20px 0 0 0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
-#datos-personales {
+.datos-personales {
     display: flex;
-    margin: 0 20px 40px;
-    border-radius: 40px;
-    padding: 20px;
-    background-color: rgb(50, 50, 50);
-    color: beige;
-    max-width: 1200px;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: space-evenly;
     align-items: center;
+    gap: 20px;
+    margin: 0 20px 40px;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: rgb(50, 50, 50);
+    color: beige;
+}
+
+.datos-perfil ul {
     line-height: 1.5rem;
 }
 
 h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
 }
 
 ul {
     list-style: none;
+    line-height: 1.5rem;
 }
 
 img {
     border-radius: 20px;
 }
 
-#informacion {
+.informacion {
     display: flex;
-    /*background-color: rgb(187, 165, 165);*/
-    color: rgb(50, 50, 50);
-    padding: 20px;
     flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 1200px;
-    justify-content: baseline; 
+    justify-content: space-around;
     align-items: top;
-    gap: 40px 60px;
+    margin: 20px;
+    gap: 40px 40px;
+    max-width: 1200px; 
     margin-bottom: 40px;
+    color: rgb(50, 50, 50);
 }
 
-.bloque {
-    max-width: 540px;
-    /*background-color: aquamarine;*/
+.informacion .italic {
+    font-style: italic;
+}
+
+.bloque-info {
+    max-width: 500px;
+    min-width: 200px;
+}
+
+.bloque-info li {
     line-height: 1.5rem;
-}
-
-ul #bandas {
-    padding-left: 20px;
+    margin-bottom: 0.6rem;
 }
 
 footer {
     display: flex;
-    justify-content: center;
-    background-color: rgb(50, 50, 50);
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: rgb(50, 50, 50);
     color: beige;  
 }
 
-#pie {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 1200px;
-    justify-content: space-between;
-}
-
-footer p {
-    padding: 20px;
-    margin: 0;
+footer a {
     color: beige;
-}
-
-footer ul, a {
-    padding: 20px;
-    color: beige;
-}
-
-li {
-    text-wrap: pretty;
 }
