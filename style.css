@@ -32,7 +32,7 @@ main {
     flex: 1;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(beige 0%, rgb(220, 220, 220) 40%);
+    background: linear-gradient(beige 0%, #CCCCCC 40%);
     padding-bottom: 20px;
 }
 
@@ -69,7 +69,8 @@ header {
     color: beige;
 }
 
-.tablet, .mobile {
+.tablet,
+.mobile {
     display: none;
 }
 
@@ -93,6 +94,11 @@ footer a {
 
 header a:hover,
 footer a:hover {
+    color: beige;
+}
+
+nav a.active {
+    font-weight: bold;
     color: beige;
 }
 
@@ -180,6 +186,59 @@ address {
     margin-bottom: 0.6rem;
 }
 
+section #section-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+
+label {
+    display: block;
+    height: 2rem;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    max-width: 600px;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5em;
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 2px solid #808080;
+    font-size: 0.9rem;
+    font-family: "Ubuntu";
+    background-color: #CCCCCC;
+}
+
+textarea {
+    border-radius: 16px;
+    border: 2px solid #808080;
+    font-size: 0.9rem;
+    font-family: "Ubuntu";
+    padding: 1.5rem;
+    width: 100%;
+    min-height: 150px;
+    background-color: #CCCCCC;
+}
+
+input[type=sumbit] {
+    height: 30px;
+    width: 150px;
+}
+
+.enviar {
+    background-color: #333333;
+    color: beige;
+    font-size: 1em;
+    font-weight: bold;
+    border-color: beige;
+}
+
+
+
 /* TABLET */
 
 @media screen and (max-width: 768px) {
@@ -187,13 +246,14 @@ address {
         display: inline;
     }
 
-    header .full, header .mobile {
+    header .full,
+    header .mobile {
         display: none;
     }
 
     #footer-redes {
-    flex-direction: column;
-    text-align: end;
+        flex-direction: column;
+        text-align: end;
     }
 }
 
@@ -204,7 +264,8 @@ address {
         display: inline;
     }
 
-    header .full, header .tablet {
+    header .full,
+    header .tablet {
         display: none;
     }
 
@@ -213,21 +274,35 @@ address {
     }
 
     .header-container ul {
-    column-gap: 1rem;
+        column-gap: 1rem;
     }
 
     #hero {
-    margin: 2rem 1rem 2rem 1rem;
+        margin: 2rem 1rem 2rem 1rem;
     }
 
     .datos-personales {
-    margin: 0 1rem 3rem;
+        margin: 0 1rem 3rem;
     }
 
     .informacion {
-    margin: 0 1rem;
+        margin: 0 1rem;
     }
 
+    footer .header-container {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    #footer-redes {
+        flex-direction: row;
+        text-align: center;
+        column-gap: 2rem;
+    }
+
+    #footer-catedra {
+        align-items: center;
+    }
 }
 
 /* TRABAJO PREVIO de donde tomo cosas
