@@ -449,6 +449,7 @@ textarea:focus {
 
     #footer-catedra {
         align-items: center;
+        text-align: center;
     }
 
     section #section-form {
